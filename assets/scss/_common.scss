@@ -1,5 +1,4 @@
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -47,8 +46,6 @@ body {
   height: 100%;
   padding: 40px;
 
-  -webkit-transition: opacity 1s;
-  -o-transition: opacity 1s;
   transition: opacity 1s;
 
   opacity: 0;
@@ -88,14 +85,10 @@ body {
   top: 0;
   bottom: 0;
 
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
+
   align-items: center;
-  -ms-flex-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+
   justify-content: center;
 }
 
@@ -106,8 +99,6 @@ body {
   height: 0;
   padding: 0;
 
-  -webkit-transition: opacity 0.25s ease-out;
-  -o-transition: opacity 0.25s ease-out;
   transition: opacity 0.25s ease-out;
 
   opacity: 0;
@@ -115,8 +106,6 @@ body {
 
 .control-pause:hover,
 .control-pause:focus {
-  -webkit-transition: opacity 1s ease-in 0.5s;
-  -o-transition: opacity 1s ease-in 0.5s;
   transition: opacity 1s ease-in 0.5s;
 
   opacity: 1;
@@ -128,8 +117,6 @@ body {
 
   display: block;
 
-  -webkit-transform: translate(50%, 50%);
-  -ms-transform: translate(50%, 50%);
   transform: translate(50%, 50%);
 
   opacity: 0;
@@ -173,8 +160,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+
   justify-content: center;
 
   width: 100%;
@@ -203,7 +189,7 @@ body {
 
 .indicator.active {
   border-color: #ffffff;
-  -webkit-box-shadow: 0 0 10px #ffffff;
+
   box-shadow: 0 0 10px #ffffff;
 }
 
