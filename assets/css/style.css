@@ -35,13 +35,13 @@ body {
 
 .fa-angle-left,
 .fa-angle-right {
-  color: rgba(200, 150, 200, 0.5);
+  color: rgba(200, 150, 200, 0.8);
   font-size: 60px;
 }
 
 .fa-play-circle,
 .fa-pause-circle {
-  color: rgba(200, 150, 200, 0.5);
+  color: rgba(200, 150, 200, 0.8);
   font-size: 30vh;
   font-style: normal;
 }
@@ -51,8 +51,6 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  background: #000000;
 }
 
 .slide {
@@ -62,6 +60,9 @@ body {
   width: 100%;
   height: 100%;
   padding: 40px;
+  -webkit-transition: opacity 2.5s;
+  -o-transition: opacity 2.5s;
+  transition: opacity 2.5s;
   opacity: 0;
   background-position: 50% 50%;
   background-size: cover;
@@ -172,10 +173,10 @@ body {
 }
 
 .indicator {
-  width: 40px;
+  width: 100px;
   height: 20px;
-  margin: -40px 7.5px 0;
-  border: 3px solid rgba(200, 150, 200, 0.5);
+  margin: -43px 7.5px 0;
+  border: 3px solid rgba(200, 150, 200, 0.8);
   border-radius: 5px;
   outline: none;
   background: none;
@@ -188,13 +189,17 @@ body {
 
 .indicator.active {
   border-color: #ffffff;
-  background-color: rgba(200, 150, 200, 0.5);
+  background-color: rgba(200, 150, 200, 0.8);
 }
 
-h1 {
-  color: #c71f1f;
-  font-size: 40px;
-  text-align: center;
+h3 {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  color: #c896c8;
+  font-size: 20px;
+  text-shadow: 0.5px 0.5px #fff;
+  z-index: 5;
 }
 
 @media (min-width: 992px) {
@@ -205,5 +210,12 @@ h1 {
   }
   .indicator {
     cursor: pointer;
+  }
+}
+
+@media (max-width: 700px) {
+  .control-prev,
+  .control-next {
+    display: none;
   }
 }

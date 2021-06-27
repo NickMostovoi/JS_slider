@@ -1,4 +1,3 @@
-
 class Carousel {
   constructor(p) {
     let settings = { ...{ containerID: '#carousel', interval: 5000, isPlaying: true, slideID: '.slide' }, ...p };
